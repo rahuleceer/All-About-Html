@@ -159,11 +159,66 @@
 
       <hr>
       <!-- audio tag -->
-      <audio controls src="./sound.mp3" preload="metadata" loop>roar-sound</audio>
+      <audio controls src="./sound.mp3" preload="metadata" loop controlsList="nodownload">roar-sound</audio>
 
       <hr>
       <!-- vidio tag -->
-      <video controls src="./friday.mp4" preload="metadata" loop width="200px" height="200px">roar-sound</video>
+      <video controls src="./friday.mp4" preload="metadata" loop controlsList="nodownload" width="200px" height="200px">roar-sound</video>
+
+      <hr>
+      <!-- iframe tag -->
+      <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">This is iframe</iframe>
+
+      <hr>
+      <!-- table  -->
+      <table border="2">
+        <caption>Council Budget</caption>
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th >Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th >Donuts</th>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <th >Stationery</th>
+                <td>18,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th >Totals</th>
+                <td>21,000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <!-- progress tag -->
+    <label for="file">File progress:</label>
+    <progress id="file" max="100" value="70"></progress>
+
+    <hr>
+    <!-- form  -->
+    <!-- Form which will send a GET request to the current URL -->
+    <form action="" method="get" class="form-example">
+      <div class="form-example">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-example">
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="form-example">
+        <input type="submit" value="Subscribe!">
+      </div>
+    </form>    
+
 
 </body>
 </html>
